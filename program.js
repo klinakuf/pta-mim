@@ -29,6 +29,8 @@ function fibonacci(n){
   }
 }
 
+var test = 3;
+
 simple(1);
 simple(1);
 simple(4);
