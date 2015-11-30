@@ -37,11 +37,11 @@ simple(4);
 simple(5);
 
 // console.log(fibonacci(6));
-addition(3, 2);
-addition(13, 4);
-addition(13, 4);
-addition(13, 4);
-addition(12, 4);
+// addition(3, 2);
+// addition(13, 4);
+// addition(13, 4);
+// addition(13, 4);
+// addition(12, 4);
 
 // isBiggerThanTen(9);
 // isBiggerThanTen(20);
