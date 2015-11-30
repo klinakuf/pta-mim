@@ -45,4 +45,4 @@ simple(5);
 
 // isBiggerThanTen(9);
 // isBiggerThanTen(20);
-console.log("done");
+// console.log("done");

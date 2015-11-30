@@ -1,181 +1,90 @@
 (function () {
-	// initial list of function
-	var Cinit = [
-		'simple',
-		'fibonacci',
-		'addition',
-		'isBiggerThanTen'
-	];
-	
+
 	// C is the set of memoizeit method candidates
 	var C = [];
 	// k is the depth of comparison
 	var k = 1; 
-	// Global variable to hold the current input;
-	var currentInput;
-	
+
+	//Maybe in the future to replace this code with something that works better.
+	//Used for hashing a unique ID for functions
+	String.prototype.hashCode = function () {
+		var hash = 0, i, chr, len;
+		if (this.length == 0) return hash;
+		for (i = 0, len = this.length; i < len; i++) {
+			chr = this.charCodeAt(i);
+			hash = ((hash << 5) - hash) + chr;
+			hash |= 0; // Convert to 32bit integer
+		}
+		return Math.abs(hash);
+	};
 
 	
-	// Array of set of IO tuples of all methods
-	
-	var TClass = function () {
-		this.methods = [];
+	// Array of set of IO tuples of all candidates
+	var MethodContainer = function () {
+		this.candidates = [];
 	}
-	TClass.prototype = {
+	MethodContainer.prototype = {
 		getMethodById: function (id) {
-			// console.log('Retrieving method by id: '+ id);
-			var foundMethod = {};
-			this.methods.forEach(function (val, ind, temp) {
-				// console.log('Comparing id '+val.methodId+' with the id '+ id);
+			var foundMethod;
+			this.candidates.forEach(function (val, ind, temp) {
 				if (val.methodId === id) {
-					// console.log('Found matching id');
 					foundMethod = temp[ind];
 					return;
 				}
-
 			});
 			return foundMethod;
 		}
 	}
 
-
-
-	var functionCallStack = new Array();
-
-	var Tmethod = function (id) {
+	// An object that contains a method and an array of all it's IO pairs
+	var MethodDesc = function (id) {
 		this.methodId = id;
 		this.tuples = [];
-		// this keeps track of current tuple being processed
-		this.currentTupleIndex;
 	}
 
-	Tmethod.prototype = {
-		
-		// associateOutput: function(i)
-		
-		addInput: function (input) {
-			console.log('Checking of input:');
-			console.log(JSON.stringify(input));
-			var foundInput = false;
-			this.tuples.forEach(function (value, index, temp) {
-				if (value.input['0'] === input['0']) {	
-					currentInput = input;
-					// value.count++;
-					// console.log('Input exist, incrementing the count');
-					// this.currentTupleIndex = index;
-					foundInput = true;
-				}
-				else {
-					console.log('input does not exist create new input');
-					
-					this.currentTupleIndex = temp.length - 1;
-				}
-			});
-
-			if (!foundInput) {
-				// this.tuples.push({
-				// 	input: input,
-				// 	output: null,
-				// 	count: 1
-				// });
-			}
-		},
+	MethodDesc.prototype = {
 		// checks if input/output pair exists, increments count if so, else creates new input/ouput pair
-		addIOpair: function(output){
+		addIOPair: function (input, output) {
 			var foundIOPair = false;
 			this.tuples.forEach(function (value, index, temp) {
-				if (value.input['0'] === currentInput['0'] && output === value.output) {	
+				if (value.input['0'] === input['0'] && output === value.output) {
 					value.count++;
-					console.log('same input/output pair exist, incrementing the count');
-					this.currentTupleIndex = index;
 					foundIOPair = true;
-				}
-				else {
-					console.log('output does not exist create new input');
-					
-					this.currentTupleIndex = temp.length - 1;
 				}
 			});
 
 			if (!foundIOPair) {
 				this.tuples.push({
-					input: currentInput,
+					input: input,
 					output: output,
 					count: 1
 				});
-			}		
+			}
 		},
 
 		getTuples: function () {
 			return this.tuples;
 		}
 	};
-
-	var T = new TClass();
+	// An object that contains an array of method candidates for memoization
+	var methodContainer = new MethodContainer();
+	
 	J$.analysis = {
+		// generate input output pair for method
+		invokeFun: function (iid, f, base, args, result, isConstructor, isMethod, functionIid) {
+			var id = f.toString().hashCode();
+			var currentMethod = methodContainer.getMethodById(id);
 
-		declare: function (iid, name, val, isArgument, argumentIndex, isCatchParam) {
-			if (!isArgument) {
-				var method = name;
-				console.log(method);
-			}
-		},
-
-		functionEnter: function (iid, f, dis, args) {
-			var id = J$.getGlobalIID(iid);
-			console.log('The function ENTER iid is:' + iid);
-			// functionCallStack.push(iid);
-			// Input Output structure of the tuple
-			// check if Tmethod already exists
-			// if not create a new one
-			var methodExist = true;
-			T.methods.forEach(function (val, ind, tmp) {
-				if (val.methodId === id) {
-					// console.log('Adding Input to existing method');
-					console.log(JSON.stringify(tmp[ind]));
-					// tmp[ind].addInput(args);
-					currentInput = args;
-					console.log('Method consist of the following inputs');
-					console.log(tmp[ind]);
-					methodExist = false;
-				}
-			});
-
-			if (methodExist) {
-				// console.log('Creating new method');
-				var t = new Tmethod(id);
-				currentInput = args;
-				// t.addInput(args);
+			if (!currentMethod) {
+				var t = new MethodDesc(id);
 				console.log(JSON.stringify(t));
-				// if method exists then add input to args
-				T.methods.push(t);
+				t.addIOPair(args, result);
+				methodContainer.candidates.push(t);
 			}
-			functionCallStack.push(id);
-		},
-
-		functionExit: function (iid, returnVal
-			, exp) {
-			var funcEnteredId = functionCallStack.pop();
-			var currentMethod = T.getMethodById(funcEnteredId);
-			console.log('Return val is: ');
-			console.log(JSON.stringify(returnVal));
-			console.log("The current method is:");
-			
-			currentMethod.addIOpair(returnVal);
-			console.log(JSON.stringify(currentMethod));
-			
-			//currentMethod.addOutput(returnVal);
-
-			
-			
-			// console.log('The function EXIT iid is:' + iid);
-			console.log('The id is:' + funcEnteredId);
-			// console.log('The array method consists of:');
-			// console.log(JSON.stringify(T.methods));
+			else {
+				currentMethod.addIOPair(args, result);
+				console.log(JSON.stringify(currentMethod));
+			}
 		}
-
-
 	};
-
-
 } ());
