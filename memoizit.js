@@ -21,6 +21,7 @@
 	
 	// Array of set of IO tuples of all candidates
 	var MethodContainer = function () {
+		this.minimumHitRatio = 0.2,
 		this.candidates = [];
 	}
 	MethodContainer.prototype = {
@@ -43,13 +44,63 @@
 	}
 
 	MethodDesc.prototype = {
+
+		newaddIOPair: function(input, output){
+			var foundIOPair = false;
+			console.log("this tuples: " + JSON.stringify(this.tuples));
+			this.tuples.forEach(function (object, index, temp){
+				// check for output first before input
+				if(output == object.output){
+					for(i in object.input){
+						foundIOPair = object.input[i] === input[i];
+						// break out of loop if not found
+						if(!foundIOPair) 
+							break;
+					}
+					console.log("the index: " + index);
+					console.log("the object before inc: " + object);
+					// 
+					if(foundIOPair){
+						// also checking the case of empty tuples
+						temp[index].count++;
+						console.log("the object after inc: " + temp[index]);			
+					}	
+				}
+				
+				else{
+					
+				}
+			});
+			// push new object if different IO pair
+			if(!foundIOPair){
+				this.tuples.push({
+					input: input,
+					output: output,
+					count: 1
+				});
+			}
+		},
+		
 		// checks if input/output pair exists, increments count if so, else creates new input/ouput pair
 		addIOPair: function (input, output) {
 			var foundIOPair = false;
+			var tempIndex = 0;
 			this.tuples.forEach(function (value, index, temp) {
-				if (value.input['0'] === input['0'] && output === value.output) {
-					value.count++;
-					foundIOPair = true;
+				if (output === value.output) {
+					for(key in value.input) {
+						if(value.input[key] === input[key]) {
+							foundIOPair = true;
+							tempIndex = index;
+							
+						}
+					    else {
+					    	foundIOPair = false;
+					    	return;
+					    }
+					}
+				}
+				else {
+					foundIOPair = false;
 				}
 			});
 
@@ -60,6 +111,19 @@
 					count: 1
 				});
 			}
+			else {
+				this.tuples[tempIndex].count++;
+			}
+		},
+
+		computeHitRatio: function(){
+			var numerator = 0;
+			var tupleMult = 0;
+			this.tuples.forEach(function(val, ind, temp){
+				tupleMult += val.count;
+				numerator += val.count - 1;	
+			});
+			return numerator/tupleMult;
 		},
 
 		getTuples: function () {
@@ -78,13 +142,33 @@
 			if (!currentMethod) {
 				var t = new MethodDesc(id);
 				console.log(JSON.stringify(t));
-				t.addIOPair(args, result);
+				//t.addIOPair(args, result);
+				t.newaddIOPair(args, result);
 				methodContainer.candidates.push(t);
 			}
 			else {
-				currentMethod.addIOPair(args, result);
+				currentMethod.newaddIOPair(args, result);
 				console.log(JSON.stringify(currentMethod));
 			}
+
+			//console.log(currentMethod.computeHitRatio());
+		},
+
+		//Called at the end of javascript file execution
+		//Computes the hit ratio of each method, annd if it exceeds
+		//the minimumHitRatio, save it to the nextCandidates
+		scriptExit: function (iid, wrappedExceptionVal) {
+			var nextCandidates = [];
+			methodContainer.candidates.forEach( function(val, key) {
+				var hitRatio = val.computeHitRatio();
+				console.log(hitRatio);
+				if(hitRatio > methodContainer.minimumHitRatio
+					) {
+					nextCandidates.push(val);
+				}
+
+			});
+			console.log(JSON.stringify(nextCandidates));	
 		}
 	};
 } ());

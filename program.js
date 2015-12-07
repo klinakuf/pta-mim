@@ -17,8 +17,19 @@ function isLessThanTen(n) {
 
 }
 
+function returnString(s){
+  return s;
+}
+
 function simple(a) {
   return a;
+}
+function multiply(a,b,c,d) {
+  return a * b * c * d;
+}
+var garr = [];
+function pushToArray(obj){
+  return garr.push(obj);
 }
 
 function fibonacci(n){
@@ -31,10 +42,31 @@ function fibonacci(n){
 
 var test = 3;
 
+
 simple(1);
 simple(1);
 simple(4);
 simple(5);
+simple(5);
+
+multiply(2,3,3,1);
+multiply(2,3,3,2);
+multiply(2,3,3,4);
+multiply(2,3,3,1);
+
+returnString("foo");
+returnString("somw");
+returnString("foo");
+returnString("somw");
+
+addition(3, 2);
+addition(3, 1);
+addition(3, 1);
+
+//pushToArray(2);
+//pushToArray(22);
+//pushToArray(222);
+//pushToArray(22);
 
 // console.log(fibonacci(6));
 // addition(3, 2);
