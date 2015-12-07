@@ -44,10 +44,10 @@
 	}
 
 	MethodDesc.prototype = {
-
-		newaddIOPair: function(input, output){
+		
+		// checks if input/output pair exists, increments count if so, else creates new input/ouput pair
+		addIOPair: function (input, output) {
 			var foundIOPair = false;
-			console.log("this tuples: " + JSON.stringify(this.tuples));
 			this.tuples.forEach(function (object, index, temp){
 				// check for output first before input
 				if(output == object.output){
@@ -57,18 +57,11 @@
 						if(!foundIOPair) 
 							break;
 					}
-					console.log("the index: " + index);
-					console.log("the object before inc: " + object);
 					// 
 					if(foundIOPair){
 						// also checking the case of empty tuples
-						temp[index].count++;
-						console.log("the object after inc: " + temp[index]);			
+						temp[index].count++;			
 					}	
-				}
-				
-				else{
-					
 				}
 			});
 			// push new object if different IO pair
@@ -78,41 +71,6 @@
 					output: output,
 					count: 1
 				});
-			}
-		},
-		
-		// checks if input/output pair exists, increments count if so, else creates new input/ouput pair
-		addIOPair: function (input, output) {
-			var foundIOPair = false;
-			var tempIndex = 0;
-			this.tuples.forEach(function (value, index, temp) {
-				if (output === value.output) {
-					for(key in value.input) {
-						if(value.input[key] === input[key]) {
-							foundIOPair = true;
-							tempIndex = index;
-							
-						}
-					    else {
-					    	foundIOPair = false;
-					    	return;
-					    }
-					}
-				}
-				else {
-					foundIOPair = false;
-				}
-			});
-
-			if (!foundIOPair) {
-				this.tuples.push({
-					input: input,
-					output: output,
-					count: 1
-				});
-			}
-			else {
-				this.tuples[tempIndex].count++;
 			}
 		},
 
@@ -143,11 +101,11 @@
 				var t = new MethodDesc(id);
 				console.log(JSON.stringify(t));
 				//t.addIOPair(args, result);
-				t.newaddIOPair(args, result);
+				t.addIOPair(args, result);
 				methodContainer.candidates.push(t);
 			}
 			else {
-				currentMethod.newaddIOPair(args, result);
+				currentMethod.addIOPair(args, result);
 				console.log(JSON.stringify(currentMethod));
 			}
 
