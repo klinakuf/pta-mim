@@ -40,6 +40,7 @@
 	// An object that contains a method and an array of all it's IO pairs
 	var MethodDesc = function (id) {
 		this.methodId = id;
+		this.name = "";
 		this.tuples = [];
 	}
 
@@ -96,17 +97,22 @@
 		invokeFun: function (iid, f, base, args, result, isConstructor, isMethod, functionIid) {
 			var id = f.toString().hashCode();
 			var currentMethod = methodContainer.getMethodById(id);
-
+			//TODO:: store the name for functions that are being analyzed
+			//if functions are defined outside the prototype the following code extracts correctly their name
+			/*
+			console.log(Object.getOwnPropertyNames(f));
+			console.log(f["name"]);
+			*/
 			if (!currentMethod) {
 				var t = new MethodDesc(id);
-				console.log(JSON.stringify(t));
+				// console.log(JSON.stringify(t));
 				//t.addIOPair(args, result);
 				t.addIOPair(args, result);
 				methodContainer.candidates.push(t);
 			}
 			else {
 				currentMethod.addIOPair(args, result);
-				console.log(JSON.stringify(currentMethod));
+				// console.log(JSON.stringify(currentMethod));
 			}
 
 			//console.log(currentMethod.computeHitRatio());
@@ -119,7 +125,7 @@
 			var nextCandidates = [];
 			methodContainer.candidates.forEach( function(val, key) {
 				var hitRatio = val.computeHitRatio();
-				console.log(hitRatio);
+				console.log(val.methodId + " ---> " + hitRatio + " Hit Ratio");
 				if(hitRatio > methodContainer.minimumHitRatio
 					) {
 					nextCandidates.push(val);
