@@ -14,7 +14,7 @@ function isBiggerThanTen(n) {
 }
 
 function isLessThanTen(n) {
-
+  return n < 10;
 }
 
 function returnString(s){
@@ -62,6 +62,11 @@ returnString("somw");
 addition(3, 2);
 addition(3, 1);
 addition(3, 1);
+
+isLessThanTen(3);
+isLessThanTen(9);
+isLessThanTen(3);
+isLessThanTen(9);
 
 //pushToArray(2);
 //pushToArray(22);
