@@ -66,33 +66,43 @@ Calculator.prototype = {
 		//use dotProduct to implement this function
 		//TODO by Ilmi Ali 14
 		return result;
+	},
+	sumArrays: function(arr1, arr2){
+		var sum = [];
+		// if not same length, return
+		if(arr1.length != arr2.length)
+			throw "arrays are not of the same length";
+		for(var i=0; i<arr1.length;i++){
+			sum[i] = arr1[i] + arr2[i];
+		}
+		return sum;
 	}
 }
 
 var calc = new Calculator();
 var result;
-result = calc.sum(2,3);
-result = calc.sum(2,4);
-result = calc.sum(2,3,3);
-result = calc.sum(2,4,5,6)
-result = calc.sum(2,3,3);
-result = calc.sum(2,4);
-result = calc.sum(2,3,3);
-result = calc.sum(2,4,4)
-result = calc.sum(2,3);
-result = calc.sum(2,4);
-result = calc.sum(2,3,3);
-result = calc.sum(2,4);
-result = calc.sum(2,3,3);
-result = calc.sum(2,4,4)
-result = calc.sum(2,3);
-result = calc.sum(2,4);
-result = calc.sum(2,4,3);
-result = calc.sum(4,4);
-result = calc.sum(2,3,3);
-result = calc.sum(2,4,4)
-result = calc.sum(2,3);
-result = calc.sum(2);
+// result = calc.sum(2,3);
+// result = calc.sum(2,4);
+// result = calc.sum(2,3,3);
+// result = calc.sum(2,4,5,6)
+// result = calc.sum(2,3,3);
+// result = calc.sum(2,4);
+// result = calc.sum(2,3,3);
+// result = calc.sum(2,4,4)
+// result = calc.sum(2,3);
+// result = calc.sum(2,4);
+// result = calc.sum(2,3,3);
+// result = calc.sum(2,4);
+// result = calc.sum(2,3,3);
+// result = calc.sum(2,4,4)
+// result = calc.sum(2,3);
+// result = calc.sum(2,4);
+// result = calc.sum(2,4,3);
+// result = calc.sum(4,4);
+// result = calc.sum(2,3,3);
+// result = calc.sum(2,4,4)
+// result = calc.sum(2,3);
+// result = calc.sum(2);
 
 
 // result = calc.fibonacci(30);
@@ -139,62 +149,85 @@ result = calc.sum(2);
 // result = calc.factorial(2);
 // result = calc.factorial(5);
 
-result = calc.dotProduct([2,3,4], [2,3,4]);
-result = calc.dotProduct([5,3,5], [5,3,5]);
+result = calc.sumArrays([3,4,4], [3,4,4]);
+result = calc.sumArrays([3,4,4], [3,4,4]);
+result = calc.sumArrays([23,4,4], [2,4,4]);
+result = calc.sumArrays([3,4,4], [3,3,4]);
+result = calc.sumArrays([3,4,4], [3,3,4]);
+
+// result = calc.dotProduct([2,3,4], [2,3,4]);
 result = calc.dotProduct([5,3,5], [5,3,2]);
 result = calc.dotProduct([5,3,5], [5,3,2]);
-result = calc.dotProduct([2,3,4], [2,3,4]);
-result = calc.dotProduct([5,3,5], [5,3,5]);
 result = calc.dotProduct([5,3,5], [5,3,2]);
 result = calc.dotProduct([5,3,5], [5,3,2]);
-result = calc.dotProduct([2,3,4], [11,3,4]);
-result = calc.dotProduct([5,3,5], [35,3,5]);
-result = calc.dotProduct([5,3,35], [5,3,2]);
 result = calc.dotProduct([5,3,5], [5,3,2]);
-result = calc.dotProduct([2,32,4], [2,3,4]);
-result = calc.dotProduct([5,13,5], [5,3,5]);
 result = calc.dotProduct([5,3,5], [5,3,2]);
-result = calc.dotProduct([5,223,5], [5,3,2]);
-result = calc.dotProduct([2,323,43], [2,3,4]);
-result = calc.dotProduct([5,56,5], [5,31,5]);
-result = calc.dotProduct([5,34,5], [5,3,22]);
-result = calc.dotProduct([5,35,5], [5,13,2]);
+result = calc.dotProduct([5,3,5], [5,3,2]);
+result = calc.dotProduct([5,3,5], [5,3,2]);
+result = calc.dotProduct([5,3,5], [5,3,2]);
+result = calc.dotProduct([5,3,5], [5,3,2]);
+result = calc.dotProduct([5,3,5], [5,3,2]);
+result = calc.dotProduct([5,3,5], [5,3,2]);
+result = calc.dotProduct([5,3,5], [5,3,2]);
+result = calc.dotProduct([5,3,5], [5,3,2]);
+result = calc.dotProduct([5,3,5], [5,3,2]);
+result = calc.dotProduct([5,3,5], [5,3,2]);
+result = calc.dotProduct([5,3,5], [5,3,2]);
+result = calc.dotProduct([5,3,5], [5,3,2]);
+result = calc.dotProduct([5,3,5], [5,3,2]);
+// result = calc.dotProduct([5,3,5], [5,3,2]);
+// result = calc.dotProduct([2,3,4], [2,3,4]);
+// result = calc.dotProduct([5,3,5], [5,3,5]);
+// result = calc.dotProduct([5,3,5], [5,3,2]);
+// result = calc.dotProduct([5,3,5], [5,3,2]);
+// result = calc.dotProduct([2,3,4], [11,3,4]);
+// result = calc.dotProduct([5,3,5], [35,3,5]);
+// result = calc.dotProduct([5,3,35], [5,3,2]);
+// result = calc.dotProduct([5,3,5], [5,3,2]);
+// result = calc.dotProduct([2,32,4], [2,3,4]);
+// result = calc.dotProduct([5,13,5], [5,3,5]);
+// result = calc.dotProduct([5,3,5], [5,3,2]);
+// result = calc.dotProduct([5,223,5], [5,3,2]);
+// result = calc.dotProduct([2,323,43], [2,3,4]);
+// result = calc.dotProduct([5,56,5], [5,31,5]);
+// result = calc.dotProduct([5,34,5], [5,3,22]);
+// result = calc.dotProduct([5,35,5], [5,13,2]);
 try {
-result = calc.quadratic_solver(1,2,3);
-result = calc.quadratic_solver(4,2,16);
-result = calc.quadratic_solver(3,1,9);
-result = calc.quadratic_solver(3,1,9);
-result = calc.quadratic_solver(3,1,9);
-result = calc.quadratic_solver(5,1,9);
-result = calc.quadratic_solver(3,1,9);
-result = calc.quadratic_solver(1,2,3);
-result = calc.quadratic_solver(4,2,16);
-result = calc.quadratic_solver(3,1,9);
-result = calc.quadratic_solver(3,1,9);
-result = calc.quadratic_solver(3,1,9);
-result = calc.quadratic_solver(5,1,9);
-result = calc.quadratic_solver(3,1,9);
-result = calc.quadratic_solver(1,2,3);
-result = calc.quadratic_solver(4,2,16);
-result = calc.quadratic_solver(3,1,9);
-result = calc.quadratic_solver(3,1,9);
-result = calc.quadratic_solver(3,1,9);
-result = calc.quadratic_solver(5,9,9);
-result = calc.quadratic_solver(3,1,9);
-result = calc.quadratic_solver(1,2,3);
-result = calc.quadratic_solver(4,2,16);
-result = calc.quadratic_solver(3,1,9);
-result = calc.quadratic_solver(2,1,9);
-result = calc.quadratic_solver(3,4,9);
-result = calc.quadratic_solver(5,8,9);
-result = calc.quadratic_solver(3,1,9);
-result = calc.quadratic_solver(1,2,3);
-result = calc.quadratic_solver(4,2,16);
-result = calc.quadratic_solver(3,1,29);
-result = calc.quadratic_solver(3,1,9);
-result = calc.quadratic_solver(3,1,29);
-result = calc.quadratic_solver(51,1,29);
-result = calc.quadratic_solver(3,1,94);
+// result = calc.quadratic_solver(1,2,3);
+// result = calc.quadratic_solver(4,2,16);
+// result = calc.quadratic_solver(3,1,9);
+// result = calc.quadratic_solver(3,1,9);
+// result = calc.quadratic_solver(3,1,9);
+// result = calc.quadratic_solver(5,1,9);
+// result = calc.quadratic_solver(3,1,9);
+// result = calc.quadratic_solver(1,2,3);
+// result = calc.quadratic_solver(4,2,16);
+// result = calc.quadratic_solver(3,1,9);
+// result = calc.quadratic_solver(3,1,9);
+// result = calc.quadratic_solver(3,1,9);
+// result = calc.quadratic_solver(5,1,9);
+// result = calc.quadratic_solver(3,1,9);
+// result = calc.quadratic_solver(1,2,3);
+// result = calc.quadratic_solver(4,2,16);
+// result = calc.quadratic_solver(3,1,9);
+// result = calc.quadratic_solver(3,1,9);
+// result = calc.quadratic_solver(3,1,9);
+// result = calc.quadratic_solver(5,9,9);
+// result = calc.quadratic_solver(3,1,9);
+// result = calc.quadratic_solver(1,2,3);
+// result = calc.quadratic_solver(4,2,16);
+// result = calc.quadratic_solver(3,1,9);
+// result = calc.quadratic_solver(2,1,9);
+// result = calc.quadratic_solver(3,4,9);
+// result = calc.quadratic_solver(5,8,9);
+// result = calc.quadratic_solver(3,1,9);
+// result = calc.quadratic_solver(1,2,3);
+// result = calc.quadratic_solver(4,2,16);
+// result = calc.quadratic_solver(3,1,29);
+// result = calc.quadratic_solver(3,1,9);
+// result = calc.quadratic_solver(3,1,29);
+// result = calc.quadratic_solver(51,1,29);
+// result = calc.quadratic_solver(3,1,94);
 } catch(e) {
 	//do nothing
 }

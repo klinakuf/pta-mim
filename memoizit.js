@@ -4,7 +4,7 @@
 	var C = [];
 	// k is the depth of comparison
 	var k = 1; 
-
+		
 	//Maybe in the future to replace this code with something that works better.
 	//Used for hashing a unique ID for functions
 	String.prototype.hashCode = function () {
@@ -44,29 +44,61 @@
 		this.tuples = [];
 	}
 
+
 	MethodDesc.prototype = {
 		
+		testForArrays: function(var1, var2){
+			return var1.constructor === Array && var2.constructor === Array;
+		},
+		
+		compareArrays: function (arr1, arr2) {
+			if (arr1.length === arr2.length) {
+				return arr1.every(function (element, index) {
+					return element === arr2[index];
+				});
+			}
+			return false;
+		},
 		// checks if input/output pair exists, increments count if so, else creates new input/ouput pair
 		addIOPair: function (input, output) {
+			var sameOutput = false;
 			var foundIOPair = false;
-			this.tuples.forEach(function (object, index, temp){
+			this.tuples.forEach(function (object, index, temp) {
+				sameOutput,foundIOPair = false;
 				// check for output first before input
-				if(output == object.output){
-					for(i in object.input){
-						foundIOPair = object.input[i] === input[i];
-						// break out of loop if not found
-						if(!foundIOPair) 
-							break;
+				if(MethodDesc.prototype.testForArrays(output,object.output)){
+					if(MethodDesc.prototype.compareArrays(output,object.output)){
+						//an output is an array and it is the same ...
+						sameOutput = true;
+					}
+				}else if(output == object.output) {
+					//the output is a primitive and it is the same ...
+					sameOutput = true;
+				}
+				
+				if (sameOutput) {
+					for (i in object.input) {
+						// check if argument is an array
+						if(MethodDesc.prototype.testForArrays(input[i],object.input[i]))
+						{
+							foundIOPair = MethodDesc.prototype.compareArrays(input[i],object.input[i]);
+						} else {
+							//primitive checking
+							foundIOPair = object.input[i] === input[i];
+						}
+							// break out of loop if not found
+							if (!foundIOPair)
+								break;
 					}
 					// 
-					if(foundIOPair){
+					if (foundIOPair) {
 						// also checking the case of empty tuples
-						temp[index].count++;			
-					}	
+						temp[index].count++;
+					}
 				}
 			});
 			// push new object if different IO pair
-			if(!foundIOPair){
+			if (!foundIOPair) {
 				this.tuples.push({
 					input: input,
 					output: output,
@@ -75,14 +107,14 @@
 			}
 		},
 
-		computeHitRatio: function(){
+		computeHitRatio: function () {
 			var numerator = 0;
 			var tupleMult = 0;
-			this.tuples.forEach(function(val, ind, temp){
+			this.tuples.forEach(function (val, ind, temp) {
 				tupleMult += val.count;
-				numerator += val.count - 1;	
+				numerator += val.count - 1;
 			});
-			return numerator/tupleMult;
+			return numerator / tupleMult;
 		},
 
 		getTuples: function () {
@@ -91,11 +123,16 @@
 	};
 	// An object that contains an array of method candidates for memoization
 	var methodContainer = new MethodContainer();
-	
+
 	J$.analysis = {
 		// generate input output pair for method
 		invokeFun: function (iid, f, base, args, result, isConstructor, isMethod, functionIid) {
+			var giid = J$.getGlobalIID(iid);
+			var location = J$.iidToLocation(giid);
 			var id = f.toString().hashCode();
+			var functionName = f.toString().split('function')[1];
+			functionName = functionName.split('(')[0];
+			console.log(location);
 			var currentMethod = methodContainer.getMethodById(id);
 			//TODO:: store the name for functions that are being analyzed
 			//if functions are defined outside the prototype the following code extracts correctly their name
@@ -123,16 +160,16 @@
 		//the minimumHitRatio, save it to the nextCandidates
 		scriptExit: function (iid, wrappedExceptionVal) {
 			var nextCandidates = [];
-			methodContainer.candidates.forEach( function(val, key) {
+			methodContainer.candidates.forEach(function (val, key) {
 				var hitRatio = val.computeHitRatio();
 				console.log(val.methodId + " ---> " + hitRatio + " Hit Ratio");
-				if(hitRatio > methodContainer.minimumHitRatio
+				if (hitRatio > methodContainer.minimumHitRatio
 					) {
 					nextCandidates.push(val);
 				}
 
 			});
-			console.log(JSON.stringify(nextCandidates));	
+			console.log(JSON.stringify(nextCandidates));
 		}
 	};
 } ());
