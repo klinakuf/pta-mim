@@ -21,7 +21,7 @@
 	
 	// Array of set of IO tuples of all candidates
 	var MethodContainer = function () {
-		this.minimumHitRatio = 0.2,
+		this.minimumHitRatio = 0.6,
 		this.candidates = [];
 	}
 	MethodContainer.prototype = {
@@ -41,6 +41,7 @@
 	var MethodDesc = function (id) {
 		this.methodId = id;
 		this.name = "";
+		this.location = "";
 		this.tuples = [];
 	}
 
@@ -127,32 +128,20 @@
 	J$.analysis = {
 		// generate input output pair for method
 		invokeFun: function (iid, f, base, args, result, isConstructor, isMethod, functionIid) {
-			var giid = J$.getGlobalIID(iid);
+			var giid = J$.getGlobalIID(functionIid);
 			var location = J$.iidToLocation(giid);
 			var id = f.toString().hashCode();
-			var functionName = f.toString().split('function')[1];
-			functionName = functionName.split('(')[0];
-			console.log(location);
 			var currentMethod = methodContainer.getMethodById(id);
-			//TODO:: store the name for functions that are being analyzed
-			//if functions are defined outside the prototype the following code extracts correctly their name
-			/*
-			console.log(Object.getOwnPropertyNames(f));
-			console.log(f["name"]);
-			*/
 			if (!currentMethod) {
 				var t = new MethodDesc(id);
-				// console.log(JSON.stringify(t));
-				//t.addIOPair(args, result);
 				t.addIOPair(args, result);
+				t.location = location;
 				methodContainer.candidates.push(t);
 			}
 			else {
 				currentMethod.addIOPair(args, result);
-				// console.log(JSON.stringify(currentMethod));
+				currentMethod.location = location;
 			}
-
-			//console.log(currentMethod.computeHitRatio());
 		},
 
 		//Called at the end of javascript file execution
@@ -169,7 +158,10 @@
 				}
 
 			});
-			console.log(JSON.stringify(nextCandidates));
+			nextCandidates.forEach(function (candidate, key) {
+				console.log('Memoize candidate found at location: ' + candidate.location);
+			});
+			// console.log(JSON.stringify(nextCandidates));
 		}
 	};
 } ());

@@ -81,6 +81,9 @@ Calculator.prototype = {
 
 var calc = new Calculator();
 var result;
+var stringTest = function(string1, string2) {
+	return string1 + string2;
+}
 // result = calc.sum(2,3);
 // result = calc.sum(2,4);
 // result = calc.sum(2,3,3);
@@ -154,6 +157,10 @@ result = calc.sumArrays([3,4,4], [3,4,4]);
 result = calc.sumArrays([23,4,4], [2,4,4]);
 result = calc.sumArrays([3,4,4], [3,3,4]);
 result = calc.sumArrays([3,4,4], [3,3,4]);
+result = calc.sumArrays([3,4,4], [3,3,4]);
+result = calc.sumArrays([3,4,4], [3,3,4]);
+result = calc.sumArrays([3,4,4], [3,3,4]);
+result = calc.sumArrays([3,4,4], [3,3,4]);
 
 // result = calc.dotProduct([2,3,4], [2,3,4]);
 result = calc.dotProduct([5,3,5], [5,3,2]);
@@ -175,6 +182,7 @@ result = calc.dotProduct([5,3,5], [5,3,2]);
 result = calc.dotProduct([5,3,5], [5,3,2]);
 result = calc.dotProduct([5,3,5], [5,3,2]);
 result = calc.dotProduct([5,3,5], [5,3,2]);
+
 // result = calc.dotProduct([5,3,5], [5,3,2]);
 // result = calc.dotProduct([2,3,4], [2,3,4]);
 // result = calc.dotProduct([5,3,5], [5,3,5]);
