@@ -21,7 +21,7 @@
 	
 	// Array of set of IO tuples of all candidates
 	var MethodContainer = function () {
-		this.minimumHitRatio = 0.6,
+		this.minimumHitRatio = 0.02,
 		this.candidates = [];
 	}
 	MethodContainer.prototype = {
@@ -49,6 +49,8 @@
 	MethodDesc.prototype = {
 		
 		testForArrays: function(var1, var2){
+			if(var1 === undefined || var2 === undefined )
+				return false;
 			return var1.constructor === Array && var2.constructor === Array;
 		},
 		
