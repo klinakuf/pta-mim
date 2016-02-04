@@ -47,13 +47,13 @@
 
 
 	MethodDesc.prototype = {
-		
-		testForArrays: function(var1, var2){
-			if(var1 === undefined || var2 === undefined )
+
+		testForArrays: function (var1, var2) {
+			if (var1 === undefined || var2 === undefined)
 				return false;
 			return var1.constructor === Array && var2.constructor === Array;
 		},
-		
+
 		compareArrays: function (arr1, arr2) {
 			if (arr1.length === arr2.length) {
 				return arr1.every(function (element, index) {
@@ -67,31 +67,30 @@
 			var sameOutput = false;
 			var foundIOPair = false;
 			this.tuples.forEach(function (object, index, temp) {
-				sameOutput,foundIOPair = false;
+				sameOutput, foundIOPair = false;
 				// check for output first before input
-				if(MethodDesc.prototype.testForArrays(output,object.output)){
-					if(MethodDesc.prototype.compareArrays(output,object.output)){
+				if (MethodDesc.prototype.testForArrays(output, object.output)) {
+					if (MethodDesc.prototype.compareArrays(output, object.output)) {
 						//an output is an array and it is the same ...
 						sameOutput = true;
 					}
-				}else if(output == object.output) {
+				} else if (output == object.output) {
 					//the output is a primitive and it is the same ...
 					sameOutput = true;
 				}
-				
+
 				if (sameOutput) {
 					for (i in object.input) {
 						// check if argument is an array
-						if(MethodDesc.prototype.testForArrays(input[i],object.input[i]))
-						{
-							foundIOPair = MethodDesc.prototype.compareArrays(input[i],object.input[i]);
+						if (MethodDesc.prototype.testForArrays(input[i], object.input[i])) {
+							foundIOPair = MethodDesc.prototype.compareArrays(input[i], object.input[i]);
 						} else {
 							//primitive checking
 							foundIOPair = object.input[i] === input[i];
 						}
-							// break out of loop if not found
-							if (!foundIOPair)
-								break;
+						// break out of loop if not found
+						if (!foundIOPair)
+							break;
 					}
 					// 
 					if (foundIOPair) {
@@ -160,6 +159,15 @@
 				}
 
 			});
+
+// 			var fs = require('fs');
+// 			fs.writeFile("tmp/test", JSON.stringify(nextCandidates), function (err) {
+// 				if (err) {
+// 					return console.log(err);
+// 				}
+// 
+// 				console.log("The file was saved!");
+// 			});
 			nextCandidates.forEach(function (candidate, key) {
 				console.log('Memoize candidate found at location: ' + candidate.location);
 			});
