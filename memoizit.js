@@ -21,7 +21,7 @@
 	
 	// Array of set of IO tuples of all candidates
 	var MethodContainer = function () {
-		this.minimumHitRatio = 0.02,
+		this.minimumHitRatio = 0.75,
 		this.candidates = [];
 	}
 	MethodContainer.prototype = {
@@ -150,9 +150,11 @@
 		//the minimumHitRatio, save it to the nextCandidates
 		scriptExit: function (iid, wrappedExceptionVal) {
 			var nextCandidates = [];
+			var totalNumberInstrumented = 0;
 			methodContainer.candidates.forEach(function (val, key) {
 				var hitRatio = val.computeHitRatio();
-				console.log(val.methodId + " ---> " + hitRatio + " Hit Ratio");
+				totalNumberInstrumented++;
+				//console.log(val.methodId + " ---> " + hitRatio + " Hit Ratio");
 				if (hitRatio > methodContainer.minimumHitRatio
 					) {
 					nextCandidates.push(val);
@@ -168,9 +170,14 @@
 // 
 // 				console.log("The file was saved!");
 // 			});
+			var noNext = 0;
 			nextCandidates.forEach(function (candidate, key) {
 				console.log('Memoize candidate found at location: ' + candidate.location);
+				noNext++;
 			});
+			console.log("Total methods instrumented: " + totalNumberInstrumented);
+			console.log("Total methods that can benefit from memoization: " + noNext);
+			console.log("Percentage :" + noNext/totalNumberInstrumented);
 			// console.log(JSON.stringify(nextCandidates));
 		}
 	};
