@@ -21,7 +21,7 @@
 	
 	// Array of set of IO tuples of all candidates
 	var MethodContainer = function () {
-		this.minimumHitRatio = 0.65,
+		this.minimumHitRatio = 0.65;
 		this.candidates = [];
 	}
 	MethodContainer.prototype = {
@@ -52,6 +52,7 @@
 			if (var1 === undefined || var2 === undefined || var1 === null || var2 === null)
 				return false;
 			return var1.constructor === Array && var2.constructor === Array;
+			// return false;
 		},
 
 		compareArrays: function (arr1, arr2) {
@@ -66,21 +67,28 @@
 		addIOPair: function (input, output) {
 			var sameOutput = false;
 			var foundIOPair = false;
+			// Handling methods dont return any value
+
+			if (typeof output === 'undefined') {
+				return;
+			}
 			this.tuples.forEach(function (object, index, temp) {
-				sameOutput, foundIOPair = false;
+
+				if(!foundIOPair){
+				sameOutput = false;
 				// check for output first before input
 				if (MethodDesc.prototype.testForArrays(output, object.output)) {
 					if (MethodDesc.prototype.compareArrays(output, object.output)) {
 						//an output is an array and it is the same ...
 						sameOutput = true;
 					}
-				} else if (output == object.output) {
+				} else if (output === object.output) {
 					//the output is a primitive and it is the same ...
 					sameOutput = true;
 				}
 
 				if (sameOutput) {
-					for (i in object.input) {
+					for (var i in object.input) {
 						// check if argument is an array
 						if (MethodDesc.prototype.testForArrays(input[i], object.input[i])) {
 							foundIOPair = MethodDesc.prototype.compareArrays(input[i], object.input[i]);
@@ -98,6 +106,7 @@
 						temp[index].count++;
 					}
 				}
+				}
 			});
 			// push new object if different IO pair
 			if (!foundIOPair) {
@@ -106,6 +115,7 @@
 					output: output,
 					count: 1
 				});
+
 			}
 		},
 
@@ -129,6 +139,7 @@
 	J$.analysis = {
 		// generate input output pair for method
 		invokeFun: function (iid, f, base, args, result, isConstructor, isMethod, functionIid) {
+
 			var giid = J$.getGlobalIID(functionIid);
 			var location = J$.iidToLocation(giid);
 			var id = f.toString().hashCode();
@@ -154,7 +165,7 @@
 			methodContainer.candidates.forEach(function (val, key) {
 				var hitRatio = val.computeHitRatio();
 				totalNumberInstrumented++;
-				//console.log(val.methodId + " ---> " + hitRatio + " Hit Ratio");
+				console.log(val.methodId + " ---> " + hitRatio + " Hit Ratio");
 				if (hitRatio > methodContainer.minimumHitRatio
 					) {
 					nextCandidates.push(val);
@@ -162,14 +173,14 @@
 
 			});
 
-// 			var fs = require('fs');
-// 			fs.writeFile("tmp/test", JSON.stringify(nextCandidates), function (err) {
-// 				if (err) {
-// 					return console.log(err);
-// 				}
-// 
-// 				console.log("The file was saved!");
-// 			});
+			// 			var fs = require('fs');
+			// 			fs.writeFile("tmp/test", JSON.stringify(nextCandidates), function (err) {
+			// 				if (err) {
+			// 					return console.log(err);
+			// 				}
+			// 
+			// 				console.log("The file was saved!");
+			// 			});
 			var noNext = 0;
 			nextCandidates.forEach(function (candidate, key) {
 				console.log('Memoize candidate found at location: ' + candidate.location);
@@ -177,8 +188,8 @@
 			});
 			console.log("Total methods instrumented: " + totalNumberInstrumented);
 			console.log("Total methods that can benefit from memoization: " + noNext);
-			console.log("Percentage :" + noNext/totalNumberInstrumented);
-			// console.log(JSON.stringify(nextCandidates));
+			console.log("Percentage of candidates memoizable:" + noNext / totalNumberInstrumented);
+			console.log(JSON.stringify(nextCandidates));
 		}
 	};
 } ());

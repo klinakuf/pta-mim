@@ -1,0 +1,35 @@
+Section 2
+- Explain the type of arguments. 
+
+Section 3.
+- Replace Listings with a single table, that contains all the input outputs,
+  and comment the table.
+-Remove the description about the Jalangi framework
+-Listing 2 indent figure, remove calculator.prototype, rename fib, remove comments
+-Listing 3 putting fibonacci in its own testcase. Obtaining results again, without the 0 hit ratio before. Make sure the line number matches code number.
+
+
+Section 3.1
+-Listing 3 replaced and reference it in section 3.1
+-Delete isAdmin from the paper
+-Single input (fibonacci)
+-Multiple input
+-Array input(dot product)
+-Array output (quadratic solver)
+
+Section 3.2
+-quadratic solver should return an array
+-referencing quadratic solver in paragraph
+-Last paragraph to way forward
+
+Section 4
+- it's
+- do not show crashing results
+- remove failing stuff 
+- rephrase the cost of implementing memoizat
+- a table of functions for a specific file for octane
+- reduce the list to a normal comma separated 
+- finish the rest
+- challenges and failures in one paragraph. 
+
+

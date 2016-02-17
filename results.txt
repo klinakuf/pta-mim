@@ -1,0 +1,45 @@
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/crypto.js:iidNaN)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/crypto.js:iidNaN)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/crypto.js:287:1:298:2)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/crypto.js:iidNaN)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/crypto.js:iidNaN)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/crypto.js:173:1:173:49)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/crypto.js:iidNaN)
+Total methods instrumented: 73
+Total methods that can benefit from memoization: 7
+Percentage :0.0958904109589041
+
+
+//Results from box2d
+start
+end
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:iidNaN)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:23:11:23:86)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:iidNaN)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:171:153:171:253)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:iidNaN)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:23:286:23:327)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:iidNaN)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:iidNaN)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:iidNaN)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:23:92:23:273)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:53:214:53:400)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:80:338:80:364)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:55:89:55:299)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:87:305:87:512)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:80:389:80:419)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:86:342:86:440)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:157:238:157:316)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:157:336:157:407)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:163:191:163:350)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:294:57:295:304)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:78:82:78:174)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:171:7:171:78)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:100:324:101:504)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:110:100:112:385)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:277:37:277:256)
+Memoize candidate found at location: (/home/student/Documents/University/PTA/pta-mim/standalone_octane/box2d.js:170:365:170:436)
+Total methods instrumented: 262
+Total methods that can benefit from memoization: 26
+Percentage :0.09923664122137404
+
