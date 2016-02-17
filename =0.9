@@ -1,0 +1,211 @@
+Downloading/unpacking cryptography
+  Running setup.py (path:/tmp/pip_build_student/cryptography/setup.py) egg_info for package cryptography
+    
+    no previously-included directories found matching 'docs/_build'
+    warning: no previously-included files matching '*' found under directory 'vectors'
+Downloading/unpacking idna>=2.0 (from cryptography)
+Downloading/unpacking pyasn1>=0.1.8 (from cryptography)
+  Downloading pyasn1-0.1.9-py2.py3-none-any.whl
+Requirement already up-to-date: six>=1.4.1 in /usr/local/lib/python2.7/dist-packages (from cryptography)
+Downloading/unpacking setuptools>=1.0 from https://pypi.python.org/packages/3.5/s/setuptools/setuptools-19.6-py2.py3-none-any.whl#md5=84e43318bf00e82e3452a15352a42c4d (from cryptography)
+Downloading/unpacking enum34 (from cryptography)
+  Running setup.py (path:/tmp/pip_build_student/enum34/setup.py) egg_info for package enum34
+    
+Downloading/unpacking ipaddress (from cryptography)
+  Downloading ipaddress-1.0.16-py27-none-any.whl
+Downloading/unpacking cffi>=1.4.1 (from cryptography)
+  Running setup.py (path:/tmp/pip_build_student/cffi/setup.py) egg_info for package cffi
+    Package libffi was not found in the pkg-config search path.
+    Perhaps you should add the directory containing `libffi.pc'
+    to the PKG_CONFIG_PATH environment variable
+    No package 'libffi' found
+    Package libffi was not found in the pkg-config search path.
+    Perhaps you should add the directory containing `libffi.pc'
+    to the PKG_CONFIG_PATH environment variable
+    No package 'libffi' found
+    Package libffi was not found in the pkg-config search path.
+    Perhaps you should add the directory containing `libffi.pc'
+    to the PKG_CONFIG_PATH environment variable
+    No package 'libffi' found
+    Package libffi was not found in the pkg-config search path.
+    Perhaps you should add the directory containing `libffi.pc'
+    to the PKG_CONFIG_PATH environment variable
+    No package 'libffi' found
+    Package libffi was not found in the pkg-config search path.
+    Perhaps you should add the directory containing `libffi.pc'
+    to the PKG_CONFIG_PATH environment variable
+    No package 'libffi' found
+    
+Downloading/unpacking pycparser (from cffi>=1.4.1->cryptography)
+  Running setup.py (path:/tmp/pip_build_student/pycparser/setup.py) egg_info for package pycparser
+    
+    warning: no previously-included files matching 'yacctab.*' found under directory 'tests'
+    warning: no previously-included files matching 'lextab.*' found under directory 'tests'
+    warning: no previously-included files matching 'yacctab.*' found under directory 'examples'
+    warning: no previously-included files matching 'lextab.*' found under directory 'examples'
+Installing collected packages: cryptography, idna, pyasn1, setuptools, enum34, ipaddress, cffi, pycparser
+  Running setup.py install for cryptography
+    Package libffi was not found in the pkg-config search path.
+    Perhaps you should add the directory containing `libffi.pc'
+    to the PKG_CONFIG_PATH environment variable
+    No package 'libffi' found
+    Package libffi was not found in the pkg-config search path.
+    Perhaps you should add the directory containing `libffi.pc'
+    to the PKG_CONFIG_PATH environment variable
+    No package 'libffi' found
+    Package libffi was not found in the pkg-config search path.
+    Perhaps you should add the directory containing `libffi.pc'
+    to the PKG_CONFIG_PATH environment variable
+    No package 'libffi' found
+    Package libffi was not found in the pkg-config search path.
+    Perhaps you should add the directory containing `libffi.pc'
+    to the PKG_CONFIG_PATH environment variable
+    No package 'libffi' found
+    Package libffi was not found in the pkg-config search path.
+    Perhaps you should add the directory containing `libffi.pc'
+    to the PKG_CONFIG_PATH environment variable
+    No package 'libffi' found
+    c/_cffi_backend.c:2:20: fatal error: Python.h: No such file or directory
+     #include <Python.h>
+                        ^
+    compilation terminated.
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/tmp/pip_build_student/cryptography/setup.py", line 318, in <module>
+        **keywords_with_side_effects(sys.argv)
+      File "/usr/lib/python2.7/distutils/core.py", line 111, in setup
+        _setup_distribution = dist = klass(attrs)
+      File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 239, in __init__
+        self.fetch_build_eggs(attrs.pop('setup_requires'))
+      File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 264, in fetch_build_eggs
+        replace_conflicting=True
+      File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 620, in resolve
+        dist = best[req.key] = env.best_match(req, ws, installer)
+      File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 858, in best_match
+        return self.obtain(req, installer) # try and download/install
+      File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 870, in obtain
+        return installer(requirement)
+      File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 314, in fetch_build_egg
+        return cmd.easy_install(req)
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 616, in easy_install
+        return self.install_item(spec, dist.location, tmpdir, deps)
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 646, in install_item
+        dists = self.install_eggs(spec, download, tmpdir)
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 834, in install_eggs
+        return self.build_and_install(setup_script, setup_base)
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 1040, in build_and_install
+        self.run_setup(setup_script, setup_base, args)
+      File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 1028, in run_setup
+        raise DistutilsError("Setup script exited with %s" % (v.args[0],))
+    distutils.errors.DistutilsError: Setup script exited with error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+    Complete output from command /usr/bin/python -c "import setuptools, tokenize;__file__='/tmp/pip_build_student/cryptography/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-TbxIDv-record/install-record.txt --single-version-externally-managed --compile:
+    Package libffi was not found in the pkg-config search path.
+
+Perhaps you should add the directory containing `libffi.pc'
+
+to the PKG_CONFIG_PATH environment variable
+
+No package 'libffi' found
+
+Package libffi was not found in the pkg-config search path.
+
+Perhaps you should add the directory containing `libffi.pc'
+
+to the PKG_CONFIG_PATH environment variable
+
+No package 'libffi' found
+
+Package libffi was not found in the pkg-config search path.
+
+Perhaps you should add the directory containing `libffi.pc'
+
+to the PKG_CONFIG_PATH environment variable
+
+No package 'libffi' found
+
+Package libffi was not found in the pkg-config search path.
+
+Perhaps you should add the directory containing `libffi.pc'
+
+to the PKG_CONFIG_PATH environment variable
+
+No package 'libffi' found
+
+Package libffi was not found in the pkg-config search path.
+
+Perhaps you should add the directory containing `libffi.pc'
+
+to the PKG_CONFIG_PATH environment variable
+
+No package 'libffi' found
+
+c/_cffi_backend.c:2:20: fatal error: Python.h: No such file or directory
+
+ #include <Python.h>
+
+                    ^
+
+compilation terminated.
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+
+  File "/tmp/pip_build_student/cryptography/setup.py", line 318, in <module>
+
+    **keywords_with_side_effects(sys.argv)
+
+  File "/usr/lib/python2.7/distutils/core.py", line 111, in setup
+
+    _setup_distribution = dist = klass(attrs)
+
+  File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 239, in __init__
+
+    self.fetch_build_eggs(attrs.pop('setup_requires'))
+
+  File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 264, in fetch_build_eggs
+
+    replace_conflicting=True
+
+  File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 620, in resolve
+
+    dist = best[req.key] = env.best_match(req, ws, installer)
+
+  File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 858, in best_match
+
+    return self.obtain(req, installer) # try and download/install
+
+  File "/usr/lib/python2.7/dist-packages/pkg_resources.py", line 870, in obtain
+
+    return installer(requirement)
+
+  File "/usr/lib/python2.7/dist-packages/setuptools/dist.py", line 314, in fetch_build_egg
+
+    return cmd.easy_install(req)
+
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 616, in easy_install
+
+    return self.install_item(spec, dist.location, tmpdir, deps)
+
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 646, in install_item
+
+    dists = self.install_eggs(spec, download, tmpdir)
+
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 834, in install_eggs
+
+    return self.build_and_install(setup_script, setup_base)
+
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 1040, in build_and_install
+
+    self.run_setup(setup_script, setup_base, args)
+
+  File "/usr/lib/python2.7/dist-packages/setuptools/command/easy_install.py", line 1028, in run_setup
+
+    raise DistutilsError("Setup script exited with %s" % (v.args[0],))
+
+distutils.errors.DistutilsError: Setup script exited with error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+
+----------------------------------------
+Cleaning up...
+Command /usr/bin/python -c "import setuptools, tokenize;__file__='/tmp/pip_build_student/cryptography/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-TbxIDv-record/install-record.txt --single-version-externally-managed --compile failed with error code 1 in /tmp/pip_build_student/cryptography
+Storing debug log for failure in /home/student/.pip/pip.log
