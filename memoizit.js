@@ -67,11 +67,22 @@
 		addIOPair: function (input, output) {
 			var sameOutput = false;
 			var foundIOPair = false;
+			var containsObject = false;
+
 			// Handling methods dont return any value
 
-			if (typeof output === 'undefined') {
+			if (typeof output === 'undefined' ) {
 				return;
 			}
+			
+			if(typeof output === 'object'){
+				if(output !== null && output.constructor === Array){
+					
+				}else{
+					return;
+				}
+			}
+			
 			this.tuples.forEach(function (object, index, temp) {
 
 				if(!foundIOPair){
@@ -92,9 +103,11 @@
 						// check if argument is an array
 						if (MethodDesc.prototype.testForArrays(input[i], object.input[i])) {
 							foundIOPair = MethodDesc.prototype.compareArrays(input[i], object.input[i]);
-						} else {
+						} else if(typeof input[i] !== 'object') {
 							//primitive checking
 							foundIOPair = object.input[i] === input[i];
+						}else{
+							containsObject = true;
 						}
 						// break out of loop if not found
 						if (!foundIOPair)
@@ -109,7 +122,7 @@
 				}
 			});
 			// push new object if different IO pair
-			if (!foundIOPair) {
+			if (!foundIOPair && !containsObject) {
 				this.tuples.push({
 					input: input,
 					output: output,
@@ -189,7 +202,7 @@
 			console.log("Total methods instrumented: " + totalNumberInstrumented);
 			console.log("Total methods that can benefit from memoization: " + noNext);
 			console.log("Percentage of candidates memoizable:" + noNext / totalNumberInstrumented);
-			console.log(JSON.stringify(nextCandidates));
+			// console.log(JSON.stringify(nextCandidates));
 		}
 	};
 } ());
