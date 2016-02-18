@@ -30,6 +30,8 @@ quadraticSolver(2, 5, 2);
 quadraticSolver(1, 4, 1);
 quadraticSolver(3, 9, 1);
 
+
+// there are two hit ratios here because for every function call to quadraticSolver, there is a call to Math.sqrt()
 /*1127438365 ---> 0.6666666666666666 Hit Ratio
   1524930438 ---> 0.6666666666666666 Hit Ratio
 Memoize candidate found at location: (/home/student/Projects/pta-mim/testcases/quadratic.js:iidNaN)
