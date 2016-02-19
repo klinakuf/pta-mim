@@ -17,7 +17,7 @@ function printDetails(person){
 	var fullname = "";
 	if(person.hasOwnProperty("rating"))
 		rating = getRating(person.rating);
-	fullname = "";//getFullname(person);
+	fullname = getFullname(person);
 
 	console.log(fullname + ": " + rating);
 }
@@ -38,6 +38,7 @@ printDetails({firstname: "Shalnark", lastname: "Shal", rating: 0.8});
 printDetails({firstname: "Phinks", lastname: "Chrollo", rating: 0.9});
 
 /* below are the results obtained from running the instrumentation on this test case
+The total methods instrumented here are 
 
 Al, Mas: 80
 Ali, Elmi: 80

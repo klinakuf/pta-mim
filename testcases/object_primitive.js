@@ -38,6 +38,7 @@ printDetails({firstname: "Shalnark", lastname: "Shal", rating: 0.8});
 printDetails({firstname: "Phinks", lastname: "Chrollo", rating: 0.9});
 
 /* below are the results obtained from running the instrumentation on this test case
+The total methods instrumented here are 5. This is due to native calls to functions Object.hasOwnProperty() and console.log().
 
 Al, Mas: 80
 Ali, Elmi: 80
