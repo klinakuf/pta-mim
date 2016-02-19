@@ -1,0 +1,43 @@
+// this testcase demonstrates that objects are not taken care of in our implementation
+// the value of the threshold is 0.65
+
+function getFullname(person){
+	if(!person)
+		throw "invalid person";
+	return person.lastname + ", " +  person.firstname;
+}
+
+function getRating(n){	
+	return n*100;
+}
+
+function printDetails(person){
+	var rating = 0;
+	var fullname = "";
+	if(person.hasOwnProperty("rating"))
+		rating = getRating(person.rating);
+	fullname = getFullname(person);
+
+	console.log(fullname + ": " + rating);
+}
+
+printDetails({firstname: "Mas", lastname: "Al", rating: 0.8});
+printDetails({firstname: "Elmi", lastname: "Ali", rating: 0.8});
+printDetails({firstname: "Floriment", lastname: "Klinaku", rating: 0.8});
+printDetails({firstname: "Mas", lastname: "Al", rating: 0.8});
+printDetails({firstname: "Mas", lastname: "Al", rating: 0.8});
+printDetails({firstname: "Mas", lastname: "Al", rating: 0.8});
+printDetails({firstname: "Mas", lastname: "Al", rating: 0.8});
+printDetails({firstname: "Mas", lastname: "Al", rating: 0.8});
+printDetails({firstname: "Elmi", lastname: "Ali", rating: 0.8});
+printDetails({firstname: "Floriment", lastname: "Klinaku", rating: 0.8});
+printDetails({firstname: "Mas", lastname: "Al", rating: 0.8});
+printDetails({firstname: "Mas", lastname: "Al", rating: 0.8});
+printDetails({firstname: "Shalnark", lastname: "Shal", rating: 0.8});
+printDetails({firstname: "Phinks", lastname: "Chrollo", rating: 0.9});
+
+/* below are the results obtained from running the instrumentation on this test case
+
+
+*/
+

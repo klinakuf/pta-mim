@@ -215,7 +215,7 @@
 			console.log("Total methods that were using objects: " + methodsWithObjects.length);
 
 			console.log("Percentage of candidates memoizable: " + noNext / methodsInstrumented);
-			// console.log(JSON.stringify(nextCandidates));
+			console.log(JSON.stringify(nextCandidates));
 		}
 	};
 } ());

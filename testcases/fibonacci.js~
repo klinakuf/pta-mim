@@ -1,3 +1,5 @@
+// this test case demonstrates the use of single primitive argument of type Number which returns a Number
+// the threshold used here is 0.65
 function fibonacci(n) {
 	if (n == 0 || n == 1)
 		return n;
@@ -11,3 +13,17 @@ fibonacci(5);
 fibonacci(5);
 fibonacci(5);
 fibonacci(5);
+
+/* below is the result obtained from running the instrumentation
+
+582853670 ---> 0.9047619047619048 Hit Ratio
+Memoize candidate found at location: (/home/student/Projects/pta-mim/testcases/fibonacci.js:3:1:9:2)
+Total methods : 1
+methods instrumented without objects: 1
+Total methods that can benefit from memoization: 1
+Total methods that were using objects: 0
+Percentage of candidates memoizable: 1
+[{"methodId":582853670,"name":"","location":"(/home/student/Projects/pta-mim/testcases/fibonacci.js:3:1:9:2)","tuples":[{"input":{"0":1},"output":1,"count":21},{"input":{"0":0},"output":0,"count":13},{"input":{"0":2},"output":1,"count":13},{"input":{"0":3},"output":2,"count":8},{"input":{"0":4},"output":3,"count":4},{"input":{"0":5},"output":5,"count":4}]}]
+*/
+
+
