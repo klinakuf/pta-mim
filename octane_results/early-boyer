@@ -1,0 +1,68 @@
+start
+end
+248955055 ---> 0 Hit Ratio
+1616039056 ---> 0 Hit Ratio
+566364000 ---> 0.9990136121522983 Hit Ratio
+139196807 ---> 0.9990136121522983 Hit Ratio
+1940103141 ---> 0.9974668745128605 Hit Ratio
+1598934804 ---> 0.8981481481481481 Hit Ratio
+521627427 ---> 0 Hit Ratio
+1789896432 ---> 0 Hit Ratio
+1339045758 ---> 0 Hit Ratio
+2037436931 ---> 0 Hit Ratio
+1414534360 ---> 0 Hit Ratio
+1002397838 ---> 0 Hit Ratio
+1332908900 ---> 0.04716981132075472 Hit Ratio
+1393731917 ---> 0.8333333333333334 Hit Ratio
+1378046943 ---> 0 Hit Ratio
+1383322936 ---> 0.75 Hit Ratio
+803951144 ---> 0 Hit Ratio
+328086878 ---> 0.7028985507246377 Hit Ratio
+758939583 ---> 0 Hit Ratio
+203424367 ---> 0.3595505617977528 Hit Ratio
+282915382 ---> 0.5947136563876652 Hit Ratio
+1545971871 ---> 0 Hit Ratio
+1826275438 ---> 0 Hit Ratio
+868318078 ---> 0 Hit Ratio
+1361402099 ---> 0 Hit Ratio
+270564143 ---> 0 Hit Ratio
+1774913653 ---> 0 Hit Ratio
+2008262117 ---> 0 Hit Ratio
+363503460 ---> 0.9973020847526911 Hit Ratio
+825161487 ---> 0.9021134593993326 Hit Ratio
+485741176 ---> 0.8993288590604027 Hit Ratio
+545629934 ---> 0 Hit Ratio
+551399504 ---> 0 Hit Ratio
+649802316 ---> 0 Hit Ratio
+1029447933 ---> 0.9996074326092645 Hit Ratio
+772222663 ---> 0.9996722027972028 Hit Ratio
+1814994389 ---> 0.9996300612248673 Hit Ratio
+466453815 ---> 0.9964447317388494 Hit Ratio
+1216508981 ---> 0 Hit Ratio
+653857812 ---> 0 Hit Ratio
+1565319191 ---> 0 Hit Ratio
+1530578836 ---> 0.5 Hit Ratio
+126304895 ---> 0 Hit Ratio
+526653136 ---> 0 Hit Ratio
+741142211 ---> 0 Hit Ratio
+671605740 ---> 0 Hit Ratio
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/earley-boyer.js:577:1:579:2)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/earley-boyer.js:1363:1:1365:2)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/earley-boyer.js:3177:1:3183:2)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/earley-boyer.js:iidNaN)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/earley-boyer.js:3836:19:3850:14)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/earley-boyer.js:4023:33:4037:22)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/earley-boyer.js:4056:56:4060:22)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/earley-boyer.js:1022:1:1029:2)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/earley-boyer.js:3544:54:3548:6)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/earley-boyer.js:3511:29:3514:6)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/earley-boyer.js:3604:22:3629:6)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/earley-boyer.js:158:1:160:2)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/earley-boyer.js:3635:29:3679:6)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/earley-boyer.js:3686:28:3719:6)
+Total methods : 90
+methods instrumented without objects: 46
+Total methods that can benefit from memoization: 14
+Total methods that were using objects: 44
+Percentage of candidates memoizable: 0.30434782608695654
+

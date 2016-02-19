@@ -1,0 +1,36 @@
+1598934804 ---> 0 Hit Ratio
+1747280825 ---> 0.5916509730069052 Hit Ratio
+1268404730 ---> 0 Hit Ratio
+131028161 ---> 0.05755395683453238 Hit Ratio
+1454057867 ---> 0 Hit Ratio
+843570344 ---> 0.5416666666666666 Hit Ratio
+1896563967 ---> 0.75 Hit Ratio
+2092023840 ---> 0.5384615384615384 Hit Ratio
+57371875 ---> 0 Hit Ratio
+1850940404 ---> 0 Hit Ratio
+1979190064 ---> 0 Hit Ratio
+1282434383 ---> 0 Hit Ratio
+1609163925 ---> 0 Hit Ratio
+751179111 ---> 0 Hit Ratio
+543990651 ---> 0.5555555555555556 Hit Ratio
+1429275548 ---> 0.018178532162597707 Hit Ratio
+694099607 ---> 0.9975669099756691 Hit Ratio
+1530578836 ---> 0.9375 Hit Ratio
+1151970106 ---> 0.9375 Hit Ratio
+1470848784 ---> 0 Hit Ratio
+1413495985 ---> 0 Hit Ratio
+1387676994 ---> 0 Hit Ratio
+516151696 ---> 0.7207207207207207 Hit Ratio
+1014023213 ---> 0 Hit Ratio
+164583690 ---> 0 Hit Ratio
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/crypto.js:iidNaN)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/crypto.js:iidNaN)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/crypto.js:iidNaN)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/crypto.js:173:1:173:49)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/crypto.js:iidNaN)
+Total methods : 73
+methods instrumented without objects: 25
+Total methods that can benefit from memoization: 5
+Total methods that were using objects: 48
+Percentage of candidates memoizable: 0.2
+

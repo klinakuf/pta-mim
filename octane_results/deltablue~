@@ -1,0 +1,23 @@
+start
+end
+1598934804 ---> 0 Hit Ratio
+521627427 ---> 0 Hit Ratio
+833306652 ---> 0 Hit Ratio
+127786034 ---> 0 Hit Ratio
+366537243 ---> 0 Hit Ratio
+642608790 ---> 0 Hit Ratio
+1031419167 ---> 0 Hit Ratio
+829325252 ---> 0 Hit Ratio
+372898704 ---> 0 Hit Ratio
+2143129477 ---> 0 Hit Ratio
+668416349 ---> 0 Hit Ratio
+123644751 ---> 0 Hit Ratio
+589629566 ---> 0.9834437086092715 Hit Ratio
+1690182142 ---> 0 Hit Ratio
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/deltablue.js:437:42:440:2)
+Total methods : 75
+methods instrumented without objects: 14
+Total methods that can benefit from memoization: 1
+Total methods that were using objects: 61
+Percentage of candidates memoizable: 0.07142857142857142
+

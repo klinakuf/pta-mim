@@ -4,6 +4,9 @@
 	var C = [];
 	// k is the depth of comparison
 	var k = 1; 
+	// Methods containing objects as parameters or return types
+	var methodsWithObjects = [];
+	
 		
 	//Maybe in the future to replace this code with something that works better.
 	//Used for hashing a unique ID for functions
@@ -71,54 +74,54 @@
 
 			// Handling methods dont return any value
 
-			if (typeof output === 'undefined' ) {
+			if (typeof output === 'undefined') {
 				return;
 			}
-			
-			if(typeof output === 'object'){
-				if(output !== null && output.constructor === Array){
-					
-				}else{
+
+			if (typeof output === 'object') {
+				if (output !== null && output.constructor === Array) {
+
+				} else {
 					return;
 				}
 			}
-			
+
 			this.tuples.forEach(function (object, index, temp) {
 
-				if(!foundIOPair){
-				sameOutput = false;
-				// check for output first before input
-				if (MethodDesc.prototype.testForArrays(output, object.output)) {
-					if (MethodDesc.prototype.compareArrays(output, object.output)) {
-						//an output is an array and it is the same ...
+				if (!foundIOPair) {
+					sameOutput = false;
+					// check for output first before input
+					if (MethodDesc.prototype.testForArrays(output, object.output)) {
+						if (MethodDesc.prototype.compareArrays(output, object.output)) {
+							//an output is an array and it is the same ...
+							sameOutput = true;
+						}
+					} else if (output === object.output) {
+						//the output is a primitive and it is the same ...
 						sameOutput = true;
 					}
-				} else if (output === object.output) {
-					//the output is a primitive and it is the same ...
-					sameOutput = true;
-				}
 
-				if (sameOutput) {
-					for (var i in object.input) {
-						// check if argument is an array
-						if (MethodDesc.prototype.testForArrays(input[i], object.input[i])) {
-							foundIOPair = MethodDesc.prototype.compareArrays(input[i], object.input[i]);
-						} else if(typeof input[i] !== 'object') {
-							//primitive checking
-							foundIOPair = object.input[i] === input[i];
-						}else{
-							containsObject = true;
+					if (sameOutput) {
+						for (var i in object.input) {
+							// check if argument is an array
+							if (MethodDesc.prototype.testForArrays(input[i], object.input[i])) {
+								foundIOPair = MethodDesc.prototype.compareArrays(input[i], object.input[i]);
+							} else if (typeof input[i] !== 'object') {
+								//primitive checking
+								foundIOPair = object.input[i] === input[i];
+							} else {
+								containsObject = true;
+							}
+							// break out of loop if not found
+							if (!foundIOPair)
+								break;
 						}
-						// break out of loop if not found
-						if (!foundIOPair)
-							break;
+						// 
+						if (foundIOPair) {
+							// also checking the case of empty tuples
+							temp[index].count++;
+						}
 					}
-					// 
-					if (foundIOPair) {
-						// also checking the case of empty tuples
-						temp[index].count++;
-					}
-				}
 				}
 			});
 			// push new object if different IO pair
@@ -139,6 +142,10 @@
 				tupleMult += val.count;
 				numerator += val.count - 1;
 			});
+			if (tupleMult === 0) {
+				methodsWithObjects.push(this.methodId);
+				return -1;
+			}
 			return numerator / tupleMult;
 		},
 
@@ -178,12 +185,13 @@
 			methodContainer.candidates.forEach(function (val, key) {
 				var hitRatio = val.computeHitRatio();
 				totalNumberInstrumented++;
-				console.log(val.methodId + " ---> " + hitRatio + " Hit Ratio");
-				if (hitRatio > methodContainer.minimumHitRatio
-					) {
-					nextCandidates.push(val);
+				//if the method is only with primitives
+				if (hitRatio !== -1) {
+					console.log(val.methodId + " ---> " + hitRatio + " Hit Ratio");
+					if (hitRatio > methodContainer.minimumHitRatio) {
+						nextCandidates.push(val);
+					}
 				}
-
 			});
 
 			// 			var fs = require('fs');
@@ -199,9 +207,14 @@
 				console.log('Memoize candidate found at location: ' + candidate.location);
 				noNext++;
 			});
-			console.log("Total methods instrumented: " + totalNumberInstrumented);
+
+			var methodsInstrumented = totalNumberInstrumented - methodsWithObjects.length;
+			console.log("Total methods : " + totalNumberInstrumented);
+			console.log("methods instrumented without objects: " + methodsInstrumented);
 			console.log("Total methods that can benefit from memoization: " + noNext);
-			console.log("Percentage of candidates memoizable:" + noNext / totalNumberInstrumented);
+			console.log("Total methods that were using objects: " + methodsWithObjects.length);
+
+			console.log("Percentage of candidates memoizable: " + noNext / methodsInstrumented);
 			// console.log(JSON.stringify(nextCandidates));
 		}
 	};

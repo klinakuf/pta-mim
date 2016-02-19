@@ -1,0 +1,72 @@
+start
+end
+521627427 ---> 0 Hit Ratio
+1598934804 ---> 0.5654952076677316 Hit Ratio
+1354779585 ---> 0 Hit Ratio
+581590577 ---> 0.6666666666666666 Hit Ratio
+1896563967 ---> 0.9998485638808029 Hit Ratio
+1926257933 ---> 0.4663695218119113 Hit Ratio
+158015835 ---> 0.5060810810810811 Hit Ratio
+1020119473 ---> 0.9891304347826086 Hit Ratio
+2010336860 ---> 0 Hit Ratio
+1606585146 ---> 0.20625075516533087 Hit Ratio
+1665338357 ---> 0.20625075516533087 Hit Ratio
+1127438365 ---> 0.9758593545001312 Hit Ratio
+1809856256 ---> 0 Hit Ratio
+1986754268 ---> 0 Hit Ratio
+1907994442 ---> 0 Hit Ratio
+543990651 ---> 0.18788732394366198 Hit Ratio
+694099607 ---> 0.17211267605633804 Hit Ratio
+1885246728 ---> 0 Hit Ratio
+802137197 ---> 0 Hit Ratio
+783294686 ---> 0 Hit Ratio
+28532579 ---> 0 Hit Ratio
+170864160 ---> 0 Hit Ratio
+752822641 ---> 0 Hit Ratio
+1137844754 ---> 0 Hit Ratio
+1824745836 ---> 0 Hit Ratio
+1530507328 ---> 0 Hit Ratio
+1480647957 ---> 0 Hit Ratio
+437249336 ---> 0 Hit Ratio
+749871301 ---> 0 Hit Ratio
+1792955655 ---> 0 Hit Ratio
+1031205588 ---> 0 Hit Ratio
+1342094140 ---> 0.04819277108433735 Hit Ratio
+108358066 ---> 0.5 Hit Ratio
+380713842 ---> 0 Hit Ratio
+1556566711 ---> 0 Hit Ratio
+894355376 ---> 0 Hit Ratio
+34275171 ---> 0 Hit Ratio
+819853343 ---> 0 Hit Ratio
+345707531 ---> 0.9994577006507592 Hit Ratio
+1732785396 ---> 0 Hit Ratio
+317084725 ---> 0.9994577006507592 Hit Ratio
+1635122806 ---> 0.9743589743589743 Hit Ratio
+921962843 ---> 0 Hit Ratio
+1539132810 ---> 0 Hit Ratio
+568574299 ---> 0 Hit Ratio
+315664279 ---> 0 Hit Ratio
+782755680 ---> 0 Hit Ratio
+643548748 ---> 0 Hit Ratio
+1616713647 ---> 0.8076923076923077 Hit Ratio
+377061994 ---> 0 Hit Ratio
+1810859911 ---> 0 Hit Ratio
+512862394 ---> 0 Hit Ratio
+977521367 ---> 0 Hit Ratio
+322231491 ---> 0 Hit Ratio
+401935595 ---> 0 Hit Ratio
+971823696 ---> 0.631578947368421 Hit Ratio
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/box2d.js:23:11:23:86)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/box2d.js:iidNaN)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/box2d.js:23:286:23:327)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/box2d.js:iidNaN)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/box2d.js:157:238:157:316)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/box2d.js:157:336:157:407)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/box2d.js:294:57:295:304)
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/box2d.js:171:7:171:78)
+Total methods : 262
+methods instrumented without objects: 56
+Total methods that can benefit from memoization: 8
+Total methods that were using objects: 206
+Percentage of candidates memoizable: 0.14285714285714285
+

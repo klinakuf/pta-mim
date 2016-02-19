@@ -1,0 +1,10 @@
+start
+end
+1598934804 ---> 0.9259259259259259 Hit Ratio
+799307572 ---> 0 Hit Ratio
+Memoize candidate found at location: (/home/student/Documents/PTA-project/standalone_octane/richards.js:iidNaN)
+Total methods : 34
+methods instrumented without objects: 2
+Total methods that can benefit from memoization: 1
+Total methods that were using objects: 32
+Percentage of candidates memoizable: 0.5

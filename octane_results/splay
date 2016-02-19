@@ -1,0 +1,16 @@
+start
+end
+1637223690 ---> 0 Hit Ratio
+1268404730 ---> 0 Hit Ratio
+2144166610 ---> 0 Hit Ratio
+399247186 ---> 0 Hit Ratio
+611511692 ---> 0 Hit Ratio
+367500961 ---> 0 Hit Ratio
+521627427 ---> 0 Hit Ratio
+1583824112 ---> 0 Hit Ratio
+Total methods : 25
+methods instrumented without objects: 8
+Total methods that can benefit from memoization: 0
+Total methods that were using objects: 17
+Percentage of candidates memoizable: 0
+
