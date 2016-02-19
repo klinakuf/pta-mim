@@ -1,44 +1,8 @@
-index.html:9037 844096991 ---> 0.2 Hit Ratio
-index.html:9037 1306161331 ---> 0.1111111111111111 Hit Ratio
-index.html:9037 462515332 ---> 0.2396694214876033 Hit Ratio
-index.html:9037 1006306748 ---> 0.07692307692307693 Hit Ratio
-index.html:9037 568854852 ---> 0.25 Hit Ratio
-index.html:9037 260574293 ---> 0.14285714285714285 Hit Ratio
-index.html:9037 989805995 ---> 0.16 Hit Ratio
-index.html:9037 1747667576 ---> 0.25 Hit Ratio
-index.html:9037 521627427 ---> 0.15 Hit Ratio
-index.html:9037 2124697027 ---> 0.1111111111111111 Hit Ratio
-index.html:9037 193849584 ---> 0.2 Hit Ratio
-index.html:9037 293849063 ---> 0.13333333333333333 Hit Ratio
-index.html:9037 872970206 ---> 0.5 Hit Ratio
-index.html:9037 1175592685 ---> 0.3333333333333333 Hit Ratio
-index.html:9037 1361002708 ---> 0.16666666666666666 Hit Ratio
-index.html:9037 949662842 ---> 0.2916666666666667 Hit Ratio
-index.html:9037 1494558462 ---> 0.3157894736842105 Hit Ratio
-index.html:9037 1032088602 ---> 0.25 Hit Ratio
-index.html:9037 818013612 ---> 0.8787878787878788 Hit Ratio
-index.html:9037 1016774396 ---> 0.6666666666666666 Hit Ratio
-index.html:9037 1214972380 ---> 0.8787878787878788 Hit Ratio
-index.html:9037 2093378091 ---> 0.3333333333333333 Hit Ratio
-index.html:9037 1520388144 ---> 0.6666666666666666 Hit Ratio
-index.html:9037 260454317 ---> 0.25 Hit Ratio
-index.html:9037 1645512097 ---> 0.2692307692307692 Hit Ratio
-index.html:9037 1196412924 ---> 0.3333333333333333 Hit Ratio
-index.html:9037 1081236501 ---> 0.3333333333333333 Hit Ratio
-index.html:9037 788411355 ---> 0.625 Hit Ratio
-index.html:9037 213814174 ---> 0 Hit Ratio
-index.html:9037 171774660 ---> 0.8571428571428571 Hit Ratio
-index.html:9037 249179481 ---> NaN Hit Ratio
-index.html:9037 14087248 ---> NaN Hit Ratio
-index.html:9037 1659195208 ---> 0.6 Hit Ratio
-index.html:9037 543990651 ---> 0.6 Hit Ratio
-index.html:9037 1262585517 ---> 0.6 Hit Ratio
-index.html:9037 1896563967 ---> 0.5 Hit Ratio
-index.html:9055 Memoize candidate found at location: (tmp/zergnet/img4.zergnet.com/0_assets/js/zergonry.v5.min_orig_.js:iidNaN)
-index.html:9055 Memoize candidate found at location: (tmp/zergnet/ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min_orig_.js:iidNaN)
-index.html:9055 Memoize candidate found at location: (tmp/zergnet/img4.zergnet.com/0_assets/js/zergonry.v5.min_orig_.js:iidNaN)
-index.html:9055 Memoize candidate found at location: (tmp/zergnet/ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min_orig_.js:3:15154:3:15322)
-index.html:9055 Memoize candidate found at location: (tmp/zergnet/img4.zergnet.com/0_assets/js/zergonry.v5.min_orig_.js:iidNaN)
-index.html:9058 Total methods instrumented: 240
-index.html:9059 Total methods that can benefit from memoization: 5
-index.html:9060 Percentage of candidates memoizable:0.020833333333333332
+Memoize candidate found at location: (tmp/zergnet/img4.zergnet.com/0_assets/js/zergonry.v5.min_orig_.js:iidNaN)
+index.html:9076 Memoize candidate found at location: (tmp/zergnet/ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min_orig_.js:iidNaN)
+2index.html:9076 Memoize candidate found at location: (tmp/zergnet/img4.zergnet.com/0_assets/js/zergonry.v5.min_orig_.js:iidNaN)
+index.html:9081 Total methods : 240
+index.html:9082 methods instrumented without objects: 107
+index.html:9083 Total methods that can benefit from memoization: 4
+index.html:9084 Total methods that were using objects: 133
+index.html:9086 Percentage of candidates memoizable: 0.037383177570093455
