@@ -1,0 +1,7 @@
+
+index.html:9077 Memoize candidate found at location: (tmp/3dtotal/cdnjs.cloudflare.com/ajax/libs/gas/1.10.1/gas.min_orig_.js:9:208:9:264)
+index.html:9082 Total methods : 1664
+index.html:9083 methods instrumented without objects: 724
+index.html:9084 Total methods that can benefit from memoization: 1
+index.html:9085 Total methods that were using objects: 940
+index.html:9087 Percentage of candidates memoizable: 0.0013812154696132596

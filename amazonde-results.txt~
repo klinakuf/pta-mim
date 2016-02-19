@@ -1,0 +1,13 @@
+
+
+
+Memoize candidate found at location: (inline-1_orig_.js:41:16:41:78)
+index.html:9076 Memoize candidate found at location: (tmp/amazonde/z-ecx.images-amazon.com/images/G/01/AUIClients/AmazonUI-221a7099d4449402563cf86b7a975c950a56e2a2._V2__orig_.js:iidNaN)
+index.html:9076 Memoize candidate found at location: (inline-6_orig_.js:iidNaN)
+index.html:9076 Memoize candidate found at location: (tmp/amazonde/images-eu.ssl-images-amazon.com/images/G/01/dacx/sf/DAsf-X.33_IFX4._V288798699__orig_.js:iidNaN)
+index.html:9076 Memoize candidate found at location: (tmp/amazonde/z-ecx.images-amazon.com/images/G/01/AUIClients/AmazonUI-221a7099d4449402563cf86b7a975c950a56e2a2._V2__orig_.js:iidNaN)
+index.html:9081 Total methods : 382
+index.html:9082 methods instrumented without objects: 146
+index.html:9083 Total methods that can benefit from memoization: 5
+index.html:9084 Total methods that were using objects: 236
+index.html:9086 Percentage of candidates memoizable: 0.03424657534246575

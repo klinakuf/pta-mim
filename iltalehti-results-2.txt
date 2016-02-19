@@ -1,141 +1,36 @@
-index.html:9037 260574293 ---> 0.0625 Hit Ratio
-index.html:9037 1016774396 ---> 0.8207343412526998 Hit Ratio
-index.html:9037 196721158 ---> 0.48 Hit Ratio
-index.html:9037 1747667576 ---> 0.8617511520737328 Hit Ratio
-index.html:9037 2042919819 ---> 0.5555555555555556 Hit Ratio
-index.html:9037 844096991 ---> 0.6426671732522796 Hit Ratio
-index.html:9037 293849063 ---> 0.9424157303370787 Hit Ratio
-index.html:9037 1306161331 ---> 0.5277777777777778 Hit Ratio
-index.html:9037 259418197 ---> 0.9819203268641471 Hit Ratio
-index.html:9037 672471621 ---> 0.9819098457888493 Hit Ratio
-index.html:9037 1317745015 ---> 0.9650986342943855 Hit Ratio
-index.html:9037 1645512097 ---> 0.5882352941176471 Hit Ratio
-index.html:9037 1175592685 ---> 0.7142857142857143 Hit Ratio
-index.html:9037 313780258 ---> 0.6363636363636364 Hit Ratio
-index.html:9037 780066729 ---> 0.2631578947368421 Hit Ratio
-index.html:9037 568854852 ---> 0.5833333333333334 Hit Ratio
-index.html:9037 1061842942 ---> 0.7692307692307693 Hit Ratio
-index.html:9037 989805995 ---> 0.8665413533834586 Hit Ratio
-index.html:9037 2005545903 ---> 0.993502658003544 Hit Ratio
-index.html:9037 1542779554 ---> 0.9192825112107623 Hit Ratio
-index.html:9037 521627427 ---> 0.2198641765704584 Hit Ratio
-index.html:9037 122539057 ---> 0.9285714285714286 Hit Ratio
-index.html:9037 1361002708 ---> 0.8691588785046729 Hit Ratio
-index.html:9037 1494558462 ---> 0.8288288288288288 Hit Ratio
-index.html:9037 1111997589 ---> 0.25675675675675674 Hit Ratio
-index.html:9037 1753944293 ---> 0.1206896551724138 Hit Ratio
-index.html:9037 694099607 ---> 0.9420289855072463 Hit Ratio
-index.html:9037 1851479793 ---> 0.2 Hit Ratio
-index.html:9037 1368209543 ---> 0.7307692307692307 Hit Ratio
-index.html:9037 151671611 ---> 0.75 Hit Ratio
-index.html:9037 2074195847 ---> 0.7346938775510204 Hit Ratio
-index.html:9037 930909813 ---> 0.7551020408163265 Hit Ratio
-index.html:9037 152711745 ---> 0.5 Hit Ratio
-index.html:9037 446906833 ---> 0.6470588235294118 Hit Ratio
-index.html:9037 458311914 ---> 0.20833333333333334 Hit Ratio
-index.html:9037 159864758 ---> 0.20833333333333334 Hit Ratio
-index.html:9037 171774660 ---> 0.25 Hit Ratio
-index.html:9037 1530578836 ---> 0.9183673469387755 Hit Ratio
-index.html:9037 705183606 ---> 0.875 Hit Ratio
-index.html:9037 1454151193 ---> 0.75 Hit Ratio
-index.html:9037 1962201373 ---> 0.16666666666666666 Hit Ratio
-index.html:9037 149164093 ---> 0.8666666666666667 Hit Ratio
-index.html:9037 1896563967 ---> 0.9465648854961832 Hit Ratio
-index.html:9037 602440532 ---> 0.9102564102564102 Hit Ratio
-index.html:9037 1845364374 ---> 0.8888888888888888 Hit Ratio
-index.html:9037 1076002015 ---> 0.75 Hit Ratio
-index.html:9037 9321019 ---> 0.9703703703703703 Hit Ratio
-index.html:9037 2024591645 ---> 0.75 Hit Ratio
-index.html:9037 1056801809 ---> 0.3333333333333333 Hit Ratio
-index.html:9037 1150708955 ---> 0.6666666666666666 Hit Ratio
-index.html:9037 1609845883 ---> 0.9018867924528302 Hit Ratio
-index.html:9037 38103618 ---> 0.9393939393939394 Hit Ratio
-index.html:9037 991968425 ---> 0.875 Hit Ratio
-index.html:9037 1437320936 ---> 0.2916666666666667 Hit Ratio
-index.html:9037 322767590 ---> 0.2916666666666667 Hit Ratio
-index.html:9037 716555135 ---> 0.543640897755611 Hit Ratio
-index.html:9037 803637463 ---> 0.543640897755611 Hit Ratio
-index.html:9037 727798357 ---> 0.3333333333333333 Hit Ratio
-index.html:9037 219352939 ---> 0.3333333333333333 Hit Ratio
-index.html:9037 1131220751 ---> 0.9090909090909091 Hit Ratio
-index.html:9037 1609366857 ---> 0.5 Hit Ratio
-index.html:9037 1262288569 ---> 0.4375 Hit Ratio
-index.html:9037 1052623757 ---> 0.9560439560439561 Hit Ratio
-index.html:9037 524011362 ---> 0.5625 Hit Ratio
-index.html:9037 142932025 ---> 0.9994184355917418 Hit Ratio
-index.html:9037 1530960959 ---> 0.5979643765903307 Hit Ratio
-index.html:9037 835360558 ---> 0.9996717005909389 Hit Ratio
-index.html:9037 989536876 ---> 0.916030534351145 Hit Ratio
-index.html:9037 191312747 ---> 0.9923664122137404 Hit Ratio
-index.html:9037 1040253066 ---> 0.9923664122137404 Hit Ratio
-index.html:9037 402376868 ---> 0.916030534351145 Hit Ratio
-index.html:9037 1268854033 ---> 0.916030534351145 Hit Ratio
-index.html:9037 770204078 ---> 0.916030534351145 Hit Ratio
-index.html:9037 728410582 ---> 0.916030534351145 Hit Ratio
-index.html:9037 1034968939 ---> 0.916030534351145 Hit Ratio
-index.html:9037 653663677 ---> 0.916030534351145 Hit Ratio
-index.html:9037 895060222 ---> 0.9847328244274809 Hit Ratio
-index.html:9037 1604322236 ---> 0.07142857142857142 Hit Ratio
-index.html:9037 569544818 ---> 0.7771935589878409 Hit Ratio
-index.html:9037 1295145958 ---> 0.06097560975609756 Hit Ratio
-index.html:9037 543990651 ---> 0.876984126984127 Hit Ratio
-3index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:iidNaN)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:3610:4:3715)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:3500:4:3540)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:7626:4:7784)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:iidNaN)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/nexus.ensighten.com/alma/iltalehti/Bootstrap_orig_.js:iidNaN)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:iidNaN)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:3387:4:3428)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:iidNaN)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:27591:4:27634)
-2index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:iidNaN)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/eas.almamedia.fi/EAS_tag.1.0_orig_.js:iidNaN)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:7:16610:7:16748)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:7:5146:7:5184)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:7:16054:7:16116)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:7:15517:7:15558)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:iidNaN)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:9738:4:10712)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:8:5103:8:5208)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/nexus.ensighten.com/alma/iltalehti/Bootstrap_orig_.js:12:73:12:175)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/eas.almamedia.fi/EAS_tag.1.0_orig_.js:iidNaN)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/nexus.ensighten.com/alma/iltalehti/Bootstrap_orig_.js:24:80:24:226)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/nexus.ensighten.com/alma/iltalehti/Bootstrap_orig_.js:69:368:69:450)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/nexus.ensighten.com/alma/iltalehti/Bootstrap_orig_.js:iidNaN)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/nexus.ensighten.com/alma/iltalehti/Bootstrap_orig_.js:164:86:165:376)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:iidNaN)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/eas.almamedia.fi/EAS_tag.1.0_orig_.js:3:10742:3:11034)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/nexus.ensighten.com/alma/iltalehti/Bootstrap_orig_.js:55:350:55:373)
-index.html:9055 Memoize candidate found at location: (inline-399_orig_.js:iidNaN)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:5020:4:5071)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:iidNaN)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:6092:4:6274)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:5464:4:5504)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:6:28041:6:28127)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:6:27852:6:28010)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:5:22424:5:22488)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:21159:4:21614)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:24062:4:24204)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:6:6771:6:6917)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:6:6941:6:6985)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:22134:4:22209)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:23546:4:24031)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:24278:4:24831)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:15091:4:15355)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:5:21563:5:21644)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:8:28092:8:28250)
-index.html:9055 Memoize candidate found at location: (tmp/iltalehti/eas.almamedia.fi/EAS_tag.1.0_orig_.js:iidNaN)
-index.html:9058 Total methods instrumented: 597
-index.html:9059 Total methods that can benefit from memoization: 50
-index.html:9060 Percentage of candidates memoizable:0.08375209380234507
-
-With threshold 0.85
-Total methods instrumented: 597
-index.html:9059 Total methods that can benefit from memoization: 29
-index.html:9060 Percentage of candidates memoizable:0.047933884297520664
-
-With threshold 0.95
-Total methods instrumented: 597
-index.html:9059 Total methods that can benefit from memoization: 20
-index.html:9060 Percentage of candidates memoizable:0.03305785123966942
+Memoize candidate found at location: (inline-74_orig_.js:iidNaN)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:iidNaN)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:3610:4:3715)
+3index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:iidNaN)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:3387:4:3428)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:iidNaN)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/eas.almamedia.fi/EAS_tag.1.0_orig_.js:iidNaN)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:7:16610:7:16748)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:7:5146:7:5184)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:7:16054:7:16116)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:7:15517:7:15558)
+index.html:9076 Memoize candidate found at location: (inline-74_orig_.js:iidNaN)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/nexus.ensighten.com/alma/iltalehti/Bootstrap_orig_.js:12:73:12:175)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/eas.almamedia.fi/EAS_tag.1.0_orig_.js:iidNaN)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/nexus.ensighten.com/alma/iltalehti/Bootstrap_orig_.js:24:80:24:226)
+index.html:9076 Memoize candidate found at location: (inline-74_orig_.js:iidNaN)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/nexus.ensighten.com/alma/iltalehti/Bootstrap_orig_.js:164:86:165:376)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:iidNaN)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:9738:4:10712)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:8:5103:8:5208)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/nexus.ensighten.com/alma/iltalehti/Bootstrap_orig_.js:55:350:55:373)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:5020:4:5071)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:6:5155:6:5493)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/eas.almamedia.fi/EAS_tag.1.0_orig_.js:iidNaN)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:5464:4:5504)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:21159:4:21614)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:24062:4:24204)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:23546:4:24031)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:4:24278:4:24831)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:5:23409:5:23591)
+index.html:9076 Memoize candidate found at location: (tmp/iltalehti/static.iltalehti.fi/il/js/script.min52e2_orig_.js:5:21563:5:21644)
+index.html:9081 Total methods : 618
+index.html:9082 methods instrumented without objects: 260
+index.html:9083 Total methods that can benefit from memoization: 33
+index.html:9084 Total methods that were using objects: 358
+index.html:9086 Percentage of candidates memoizable: 0.12692307692307692

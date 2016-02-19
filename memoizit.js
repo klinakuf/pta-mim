@@ -1,9 +1,5 @@
 (function () {
 
-	// C is the set of memoizeit method candidates
-	var C = [];
-	// k is the depth of comparison
-	var k = 1; 
 	// Methods containing objects as parameters or return types
 	var methodsWithObjects = [];
 	
@@ -55,7 +51,6 @@
 			if (var1 === undefined || var2 === undefined || var1 === null || var2 === null)
 				return false;
 			return var1.constructor === Array && var2.constructor === Array;
-			// return false;
 		},
 
 		compareArrays: function (arr1, arr2) {
@@ -193,15 +188,6 @@
 					}
 				}
 			});
-
-			// 			var fs = require('fs');
-			// 			fs.writeFile("tmp/test", JSON.stringify(nextCandidates), function (err) {
-			// 				if (err) {
-			// 					return console.log(err);
-			// 				}
-			// 
-			// 				console.log("The file was saved!");
-			// 			});
 			var noNext = 0;
 			nextCandidates.forEach(function (candidate, key) {
 				console.log('Memoize candidate found at location: ' + candidate.location);
@@ -215,7 +201,7 @@
 			console.log("Total methods that were using objects: " + methodsWithObjects.length);
 
 			console.log("Percentage of candidates memoizable: " + noNext / methodsInstrumented);
-			console.log(JSON.stringify(nextCandidates));
+			methodsWithObjects = [];
 		}
 	};
 } ());

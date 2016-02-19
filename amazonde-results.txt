@@ -1,25 +1,13 @@
-index.html:9037 992343241 ---> 0.6666666666666666 Hit Ratio
-index.html:9037 521627427 ---> 0.07721280602636535 Hit Ratio
-index.html:9037 171774660 ---> 0.3096446700507614 Hit Ratio
-index.html:9037 989805995 ---> 0.35 Hit Ratio
-index.html:9037 1868852202 ---> 0.49019607843137253 Hit Ratio
-index.html:9037 1306161331 ---> 0.20689655172413793 Hit Ratio
-index.html:9037 1016774396 ---> 0.42857142857142855 Hit Ratio
-index.html:9037 1530578836 ---> 0.625 Hit Ratio
-index.html:9037 158015835 ---> 0.6666666666666666 Hit Ratio
-index.html:9037 2047152681 ---> 0.010752688172043012 Hit Ratio
-index.html:9037 29978364 ---> 0.42857142857142855 Hit Ratio
-index.html:9037 568854852 ---> 0.7142857142857143 Hit Ratio
-index.html:9037 1609845883 ---> 0.42857142857142855 Hit Ratio
-index.html:9037 872970206 ---> 0.5 Hit Ratio
-index.html:9037 15458766 ---> 0.3333333333333333 Hit Ratio
-index.html:9037 780066729 ---> 0.3333333333333333 Hit Ratio
-index.html:9037 2143874370 ---> 0.3333333333333333 Hit Ratio
-index.html:9037 1693612796 ---> 0.6666666666666666 Hit Ratio
-index.html:9055 Memoize candidate found at location: (inline-1_orig_.js:41:16:41:78)
-2index.html:9055 Memoize candidate found at location: (inline-6_orig_.js:iidNaN)
-index.html:9055 Memoize candidate found at location: (tmp/amazonde/images-eu.ssl-images-amazon.com/images/G/01/dacx/sf/DAsf-X.33_IFX4._V288798699__orig_.js:iidNaN)
-index.html:9058 Total methods instrumented: 284
-index.html:9059 Total methods that can benefit from memoization: 4
-index.html:9060 Percentage of candidates memoizable:0.014084507042253521
-index.html:9061 [{"methodId":992343241,"name":"","location":"(inline-1_orig_.js:41:16:41:78)","tuples":[{"input":{"0":"1JJZEACWZ2JT07J5RD5V"},"output":"1JJZEACWZ2JT07J5RD5V","count":3}]},{"methodId":158015835,"name":"","location":"(inline-6_orig_.js:iidNaN)","tuples":[{"input":{"0":1600},"output":1600,"count":1},{"input":{"0":0},"output":0,"count":5}]},{"methodId":568854852,"name":"","location":"(inline-6_orig_.js:iidNaN)","tuples":[{"input":{"0":"head"},"output":{"0":{}},"count":11},{"input":{"0":"ol"},"output":{"0":{},"1":{}},"count":1},{"input":{"0":"li"},"output":{"0":{},"1":{},"2":{},"3":{},"4":{},"5":{},"6":{},"7":{},"8":{},"9":{},"10":{},"11":{},"12":{},"13":{}},"count":1},{"input":{"0":"img"},"output":{"0":{}},"count":1}]},{"methodId":1693612796,"name":"","location":"(tmp/amazonde/images-eu.ssl-images-amazon.com/images/G/01/dacx/sf/DAsf-X.33_IFX4._V288798699__orig_.js:iidNaN)","tuples":[{"input":{"0":1},"output":"","count":3}]}]
+
+
+
+Memoize candidate found at location: (inline-1_orig_.js:41:16:41:78)
+index.html:9076 Memoize candidate found at location: (tmp/amazonde/z-ecx.images-amazon.com/images/G/01/AUIClients/AmazonUI-221a7099d4449402563cf86b7a975c950a56e2a2._V2__orig_.js:iidNaN)
+index.html:9076 Memoize candidate found at location: (inline-6_orig_.js:iidNaN)
+index.html:9076 Memoize candidate found at location: (tmp/amazonde/images-eu.ssl-images-amazon.com/images/G/01/dacx/sf/DAsf-X.33_IFX4._V288798699__orig_.js:iidNaN)
+index.html:9076 Memoize candidate found at location: (tmp/amazonde/z-ecx.images-amazon.com/images/G/01/AUIClients/AmazonUI-221a7099d4449402563cf86b7a975c950a56e2a2._V2__orig_.js:iidNaN)
+index.html:9081 Total methods : 382
+index.html:9082 methods instrumented without objects: 146
+index.html:9083 Total methods that can benefit from memoization: 5
+index.html:9084 Total methods that were using objects: 236
+index.html:9086 Percentage of candidates memoizable: 0.03424657534246575	
