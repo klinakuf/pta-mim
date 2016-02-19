@@ -1,4 +1,5 @@
 // this testcase demonstrates that objects are not taken care of in our implementation
+// using a single object argument
 // the value of the threshold is 0.65
 
 function getFullname(person){
